@@ -12,7 +12,7 @@ function Content() {
   return (
     <div className={`container flex-fill p-20`}>
       <h1 className="d-flex justify-content-center align-items-center my-30">
-        Découvrir nos récentes recettes
+        Découvrez nos récentes recettes
       </h1>
       <div className={` d-flex flex-column card ${styles.cardContainer}`}>
         <div
