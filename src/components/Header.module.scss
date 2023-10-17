@@ -1,0 +1,11 @@
+.header {
+  background-color: white;
+  box-shadow: var(--box-shadow-nav);
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  img {
+    width: 130px;
+    height: 58px;
+  }
+}
