@@ -1,13 +1,31 @@
+@use "../assets/styles/mixins" as mixin;
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   grid-auto-columns: repeat(3, 350px);
   gap: 20px;
   place-content: center;
+  @include mixin.lg-lt {
+    grid-template-columns: repeat(2, 400px);
+    grid-auto-columns: repeat(2, 400px);
+    place-content: space-around;
+  }
+  @include mixin.md-lt {
+    grid-template-columns: repeat(2, 350px);
+    grid-auto-columns: repeat(2, 350px);
+  }
+  @include mixin.sm-lt {
+    grid-template-columns: 400px;
+  }
+  @include mixin.xs {
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+  }
 }
 
 .cardContainer {
-  width: 1130px;
+  max-width: 1130px;
+  width: 100%;
 }
 
 .searchBar {

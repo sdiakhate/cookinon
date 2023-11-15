@@ -14,10 +14,10 @@
 
 .imgContainer {
   height: 300px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   overflow: hidden;
   img {
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
     width: 100%;
     transition: 1s transform;
   }
